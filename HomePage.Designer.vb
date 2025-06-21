@@ -98,6 +98,7 @@ Partial Class HomePage
         Controls.Add(btnSignUp)
         FormBorderStyle = FormBorderStyle.None
         Name = "HomePage"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "HomePage"
         ResumeLayout(False)
         PerformLayout()

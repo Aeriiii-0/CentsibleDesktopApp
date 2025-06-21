@@ -291,6 +291,7 @@ Partial Class RegistrationForm
         Controls.Add(btnExit)
         FormBorderStyle = FormBorderStyle.None
         Name = "RegistrationForm"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "RegistrationForm"
         ResumeLayout(False)
         PerformLayout()

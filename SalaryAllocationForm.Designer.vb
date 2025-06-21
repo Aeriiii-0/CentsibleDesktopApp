@@ -387,6 +387,7 @@ Partial Class SalaryAllocationForm
         Controls.Add(txbSalary)
         FormBorderStyle = FormBorderStyle.None
         Name = "SalaryAllocationForm"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "SalaryAllocationForm"
         ResumeLayout(False)
         PerformLayout()

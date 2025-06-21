@@ -1216,6 +1216,7 @@ Partial Class DashboardForm
         Controls.Add(pnlWithdraw)
         FormBorderStyle = FormBorderStyle.None
         Name = "DashboardForm"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "DashboardForm"
         Panel2.ResumeLayout(False)
         pnlDashboard.ResumeLayout(False)

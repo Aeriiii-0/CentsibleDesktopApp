@@ -174,6 +174,7 @@ Partial Class LoginForm
         Controls.Add(btnExit)
         FormBorderStyle = FormBorderStyle.None
         Name = "LoginForm"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "LoginForm"
         ResumeLayout(False)
         PerformLayout()
