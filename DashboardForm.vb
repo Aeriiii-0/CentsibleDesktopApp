@@ -1,4 +1,6 @@
 ﻿Public Class DashboardForm
+
+    Public AccountID As Integer
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
         Application.Exit()
     End Sub
@@ -37,6 +39,10 @@
         pnlDebts.Visible = False
         pnlLogExpenses.Visible = False
         pnlWithdraw.Visible = False
+
+        lblMontlySalary.Text = GlobalData.GetSalary(AccountID)
+
+
 
     End Sub
 
