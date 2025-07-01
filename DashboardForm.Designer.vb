@@ -24,14 +24,7 @@ Partial Class DashboardForm
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(DashboardForm))
         btnExit = New Button()
-        Panel2 = New Panel()
-        btnWithdraw = New Button()
-        btnPayDebts = New Button()
-        btnDashboard = New Button()
-        btnLogExpenses = New Button()
-        btnViewRec = New Button()
         btnEditSalary = New Button()
-        btnAllocationSetting = New Button()
         Panel3 = New Panel()
         pnlDashboard = New Panel()
         lblAllSavings = New Label()
@@ -111,7 +104,26 @@ Partial Class DashboardForm
         Label44 = New Label()
         Label45 = New Label()
         txbWithdraw = New TextBox()
-        Panel2.SuspendLayout()
+        pnlDashButtons = New Panel()
+        btnViewRecords = New Button()
+        btnPayDebts = New Button()
+        btnLogExp = New Button()
+        Panel1 = New Panel()
+        btnAccSettings = New Button()
+        btnWithdraww = New Button()
+        btnLogout = New Button()
+        PictureBox1 = New PictureBox()
+        btnDashboard = New Button()
+        Label46 = New Label()
+        Label49 = New Label()
+        pnlDashh = New Panel()
+        Label39 = New Label()
+        PictureBox2 = New PictureBox()
+        pnlDash = New Panel()
+        Label47 = New Label()
+        Label40 = New Label()
+        CheckedListBox1 = New CheckedListBox()
+        pnlVieRecord = New Panel()
         pnlDashboard.SuspendLayout()
         Panel4.SuspendLayout()
         pnlUpdateSalary.SuspendLayout()
@@ -119,6 +131,12 @@ Partial Class DashboardForm
         pnlLogExpenses.SuspendLayout()
         pnlDebts.SuspendLayout()
         pnlWithdraw.SuspendLayout()
+        pnlDashButtons.SuspendLayout()
+        Panel1.SuspendLayout()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
+        pnlDashh.SuspendLayout()
+        CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
+        pnlDash.SuspendLayout()
         SuspendLayout()
         ' 
         ' btnExit
@@ -132,135 +150,22 @@ Partial Class DashboardForm
         btnExit.Text = "X"
         btnExit.UseVisualStyleBackColor = False
         ' 
-        ' Panel2
-        ' 
-        Panel2.BackColor = Color.FromArgb(CByte(177), CByte(214), CByte(209))
-        Panel2.Controls.Add(btnWithdraw)
-        Panel2.Controls.Add(btnPayDebts)
-        Panel2.Controls.Add(btnDashboard)
-        Panel2.Controls.Add(btnLogExpenses)
-        Panel2.Controls.Add(btnViewRec)
-        Panel2.Controls.Add(btnEditSalary)
-        Panel2.Controls.Add(btnAllocationSetting)
-        Panel2.Location = New Point(-2, 104)
-        Panel2.Name = "Panel2"
-        Panel2.Size = New Size(271, 445)
-        Panel2.TabIndex = 7
-        ' 
-        ' btnWithdraw
-        ' 
-        btnWithdraw.BackColor = Color.Transparent
-        btnWithdraw.FlatAppearance.BorderSize = 0
-        btnWithdraw.FlatStyle = FlatStyle.Flat
-        btnWithdraw.Font = New Font("Gadugi", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        btnWithdraw.Image = CType(resources.GetObject("btnWithdraw.Image"), Image)
-        btnWithdraw.ImageAlign = ContentAlignment.MiddleLeft
-        btnWithdraw.Location = New Point(3, 317)
-        btnWithdraw.Name = "btnWithdraw"
-        btnWithdraw.Size = New Size(266, 53)
-        btnWithdraw.TabIndex = 14
-        btnWithdraw.Text = "                     WITHDRAW SAVINGS"
-        btnWithdraw.TextAlign = ContentAlignment.MiddleLeft
-        btnWithdraw.UseVisualStyleBackColor = False
-        ' 
-        ' btnPayDebts
-        ' 
-        btnPayDebts.BackColor = Color.Transparent
-        btnPayDebts.FlatAppearance.BorderSize = 0
-        btnPayDebts.FlatStyle = FlatStyle.Flat
-        btnPayDebts.Font = New Font("Gadugi", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        btnPayDebts.Image = CType(resources.GetObject("btnPayDebts.Image"), Image)
-        btnPayDebts.ImageAlign = ContentAlignment.MiddleLeft
-        btnPayDebts.Location = New Point(5, 193)
-        btnPayDebts.Name = "btnPayDebts"
-        btnPayDebts.Size = New Size(266, 61)
-        btnPayDebts.TabIndex = 13
-        btnPayDebts.Text = "                      PAY DEBTS"
-        btnPayDebts.TextAlign = ContentAlignment.MiddleLeft
-        btnPayDebts.UseVisualStyleBackColor = False
-        ' 
-        ' btnDashboard
-        ' 
-        btnDashboard.BackColor = Color.Transparent
-        btnDashboard.FlatAppearance.BorderSize = 0
-        btnDashboard.FlatStyle = FlatStyle.Flat
-        btnDashboard.Font = New Font("Gadugi", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        btnDashboard.Image = CType(resources.GetObject("btnDashboard.Image"), Image)
-        btnDashboard.ImageAlign = ContentAlignment.MiddleLeft
-        btnDashboard.Location = New Point(3, 11)
-        btnDashboard.Name = "btnDashboard"
-        btnDashboard.Size = New Size(268, 53)
-        btnDashboard.TabIndex = 12
-        btnDashboard.Text = "                     DASHBOARD"
-        btnDashboard.TextAlign = ContentAlignment.MiddleLeft
-        btnDashboard.UseVisualStyleBackColor = False
-        ' 
-        ' btnLogExpenses
-        ' 
-        btnLogExpenses.BackColor = Color.Transparent
-        btnLogExpenses.FlatAppearance.BorderSize = 0
-        btnLogExpenses.FlatStyle = FlatStyle.Flat
-        btnLogExpenses.Font = New Font("Gadugi", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        btnLogExpenses.Image = CType(resources.GetObject("btnLogExpenses.Image"), Image)
-        btnLogExpenses.ImageAlign = ContentAlignment.MiddleLeft
-        btnLogExpenses.Location = New Point(5, 129)
-        btnLogExpenses.Name = "btnLogExpenses"
-        btnLogExpenses.Padding = New Padding(9, 0, 0, 0)
-        btnLogExpenses.Size = New Size(266, 53)
-        btnLogExpenses.TabIndex = 11
-        btnLogExpenses.Text = "                    LOG EXPENSES"
-        btnLogExpenses.TextAlign = ContentAlignment.MiddleLeft
-        btnLogExpenses.UseVisualStyleBackColor = False
-        ' 
-        ' btnViewRec
-        ' 
-        btnViewRec.BackColor = Color.Transparent
-        btnViewRec.FlatAppearance.BorderSize = 0
-        btnViewRec.FlatStyle = FlatStyle.Flat
-        btnViewRec.Font = New Font("Gadugi", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        btnViewRec.Image = CType(resources.GetObject("btnViewRec.Image"), Image)
-        btnViewRec.ImageAlign = ContentAlignment.MiddleLeft
-        btnViewRec.Location = New Point(2, 256)
-        btnViewRec.Name = "btnViewRec"
-        btnViewRec.Size = New Size(266, 53)
-        btnViewRec.TabIndex = 10
-        btnViewRec.Text = "                      VIEW RECORDS"
-        btnViewRec.TextAlign = ContentAlignment.MiddleLeft
-        btnViewRec.UseVisualStyleBackColor = False
-        ' 
         ' btnEditSalary
         ' 
         btnEditSalary.BackColor = Color.Transparent
         btnEditSalary.FlatAppearance.BorderSize = 0
         btnEditSalary.FlatStyle = FlatStyle.Flat
-        btnEditSalary.Font = New Font("Gadugi", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        btnEditSalary.Image = CType(resources.GetObject("btnEditSalary.Image"), Image)
+        btnEditSalary.Font = New Font("Cambria", 9F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        btnEditSalary.ForeColor = Color.FromArgb(CByte(19), CByte(94), CByte(86))
         btnEditSalary.ImageAlign = ContentAlignment.MiddleLeft
-        btnEditSalary.Location = New Point(0, 70)
+        btnEditSalary.Location = New Point(2, 0)
         btnEditSalary.Name = "btnEditSalary"
         btnEditSalary.Padding = New Padding(9, 0, 0, 0)
-        btnEditSalary.Size = New Size(271, 53)
+        btnEditSalary.Size = New Size(128, 36)
         btnEditSalary.TabIndex = 9
-        btnEditSalary.Text = "                    EDIT SALARY"
+        btnEditSalary.Text = "EDIT SALARY"
         btnEditSalary.TextAlign = ContentAlignment.MiddleLeft
         btnEditSalary.UseVisualStyleBackColor = False
-        ' 
-        ' btnAllocationSetting
-        ' 
-        btnAllocationSetting.BackColor = Color.Transparent
-        btnAllocationSetting.FlatAppearance.BorderSize = 0
-        btnAllocationSetting.FlatStyle = FlatStyle.Flat
-        btnAllocationSetting.Font = New Font("Gadugi", 8.5F, FontStyle.Bold)
-        btnAllocationSetting.Image = CType(resources.GetObject("btnAllocationSetting.Image"), Image)
-        btnAllocationSetting.ImageAlign = ContentAlignment.MiddleLeft
-        btnAllocationSetting.Location = New Point(0, 379)
-        btnAllocationSetting.Name = "btnAllocationSetting"
-        btnAllocationSetting.Padding = New Padding(7, 0, 0, 0)
-        btnAllocationSetting.Size = New Size(271, 66)
-        btnAllocationSetting.TabIndex = 8
-        btnAllocationSetting.Text = "                   ALLOCATION SETTING"
-        btnAllocationSetting.TextAlign = ContentAlignment.MiddleLeft
-        btnAllocationSetting.UseVisualStyleBackColor = False
         ' 
         ' Panel3
         ' 
@@ -294,7 +199,6 @@ Partial Class DashboardForm
         pnlDashboard.Name = "pnlDashboard"
         pnlDashboard.Size = New Size(767, 280)
         pnlDashboard.TabIndex = 8
-        pnlDashboard.Visible = False
         ' 
         ' lblAllSavings
         ' 
@@ -502,9 +406,9 @@ Partial Class DashboardForm
         pnlUpdateSalary.Controls.Add(Label10)
         pnlUpdateSalary.Controls.Add(Label11)
         pnlUpdateSalary.Controls.Add(txbSalary)
-        pnlUpdateSalary.Location = New Point(470, 104)
+        pnlUpdateSalary.Location = New Point(450, 107)
         pnlUpdateSalary.Name = "pnlUpdateSalary"
-        pnlUpdateSalary.Size = New Size(418, 445)
+        pnlUpdateSalary.Size = New Size(446, 442)
         pnlUpdateSalary.TabIndex = 9
         pnlUpdateSalary.Visible = False
         ' 
@@ -596,9 +500,9 @@ Partial Class DashboardForm
         pnlAllocationSettings.Controls.Add(Label24)
         pnlAllocationSettings.Controls.Add(btnPlanB)
         pnlAllocationSettings.Controls.Add(btnPlanA)
-        pnlAllocationSettings.Location = New Point(390, 107)
+        pnlAllocationSettings.Location = New Point(453, 107)
         pnlAllocationSettings.Name = "pnlAllocationSettings"
-        pnlAllocationSettings.Size = New Size(573, 442)
+        pnlAllocationSettings.Size = New Size(446, 459)
         pnlAllocationSettings.TabIndex = 10
         pnlAllocationSettings.Visible = False
         ' 
@@ -609,7 +513,7 @@ Partial Class DashboardForm
         btnDoneAlloc.FlatStyle = FlatStyle.Flat
         btnDoneAlloc.Font = New Font("Cambria", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnDoneAlloc.Image = CType(resources.GetObject("btnDoneAlloc.Image"), Image)
-        btnDoneAlloc.Location = New Point(450, 396)
+        btnDoneAlloc.Location = New Point(326, 401)
         btnDoneAlloc.Name = "btnDoneAlloc"
         btnDoneAlloc.Size = New Size(107, 34)
         btnDoneAlloc.TabIndex = 61
@@ -622,7 +526,7 @@ Partial Class DashboardForm
         Label15.BackColor = Color.FromArgb(CByte(0), CByte(99), CByte(98))
         Label15.Font = New Font("Cambria", 6F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label15.ForeColor = Color.White
-        Label15.Location = New Point(377, 156)
+        Label15.Location = New Point(295, 153)
         Label15.Name = "Label15"
         Label15.Size = New Size(37, 24)
         Label15.TabIndex = 60
@@ -634,7 +538,7 @@ Partial Class DashboardForm
         Label14.BackColor = Color.FromArgb(CByte(98), CByte(171), CByte(171))
         Label14.Font = New Font("Cambria", 6F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label14.ForeColor = Color.White
-        Label14.Location = New Point(341, 241)
+        Label14.Location = New Point(252, 244)
         Label14.Name = "Label14"
         Label14.Size = New Size(41, 24)
         Label14.TabIndex = 59
@@ -646,7 +550,7 @@ Partial Class DashboardForm
         Label13.BackColor = Color.FromArgb(CByte(171), CByte(208), CByte(208))
         Label13.Font = New Font("Cambria", 7.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label13.ForeColor = Color.White
-        Label13.Location = New Point(433, 228)
+        Label13.Location = New Point(344, 231)
         Label13.Name = "Label13"
         Label13.Size = New Size(47, 30)
         Label13.TabIndex = 58
@@ -658,7 +562,7 @@ Partial Class DashboardForm
         Label16.BackColor = Color.FromArgb(CByte(0), CByte(123), CByte(124))
         Label16.Font = New Font("Cambria", 6F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label16.ForeColor = Color.White
-        Label16.Location = New Point(335, 188)
+        Label16.Location = New Point(256, 195)
         Label16.Name = "Label16"
         Label16.Size = New Size(37, 24)
         Label16.TabIndex = 57
@@ -670,7 +574,7 @@ Partial Class DashboardForm
         Label17.BackColor = Color.FromArgb(CByte(171), CByte(208), CByte(208))
         Label17.Font = New Font("Cambria", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label17.ForeColor = Color.White
-        Label17.Location = New Point(175, 212)
+        Label17.Location = New Point(125, 212)
         Label17.Name = "Label17"
         Label17.Size = New Size(53, 34)
         Label17.TabIndex = 56
@@ -682,7 +586,7 @@ Partial Class DashboardForm
         Label18.BackColor = Color.FromArgb(CByte(98), CByte(171), CByte(171))
         Label18.Font = New Font("Cambria", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label18.ForeColor = Color.White
-        Label18.Location = New Point(89, 237)
+        Label18.Location = New Point(39, 237)
         Label18.Name = "Label18"
         Label18.Size = New Size(64, 34)
         Label18.TabIndex = 55
@@ -694,7 +598,7 @@ Partial Class DashboardForm
         Label19.BackColor = Color.FromArgb(CByte(0), CByte(123), CByte(124))
         Label19.Font = New Font("Cambria", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label19.ForeColor = Color.White
-        Label19.Location = New Point(103, 166)
+        Label19.Location = New Point(53, 166)
         Label19.Name = "Label19"
         Label19.Size = New Size(53, 34)
         Label19.TabIndex = 54
@@ -706,7 +610,7 @@ Partial Class DashboardForm
         Label20.BackColor = Color.WhiteSmoke
         Label20.Font = New Font("Cambria", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label20.ForeColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
-        Label20.Location = New Point(390, 344)
+        Label20.Location = New Point(311, 344)
         Label20.Name = "Label20"
         Label20.Size = New Size(58, 17)
         Label20.TabIndex = 53
@@ -718,7 +622,7 @@ Partial Class DashboardForm
         Label21.BackColor = Color.WhiteSmoke
         Label21.Font = New Font("Cambria", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label21.ForeColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
-        Label21.Location = New Point(130, 344)
+        Label21.Location = New Point(80, 344)
         Label21.Name = "Label21"
         Label21.Size = New Size(58, 17)
         Label21.TabIndex = 52
@@ -765,7 +669,7 @@ Partial Class DashboardForm
         btnPlanB.BackgroundImage = CType(resources.GetObject("btnPlanB.BackgroundImage"), Image)
         btnPlanB.FlatAppearance.BorderSize = 0
         btnPlanB.FlatStyle = FlatStyle.Flat
-        btnPlanB.Location = New Point(292, 135)
+        btnPlanB.Location = New Point(213, 138)
         btnPlanB.Name = "btnPlanB"
         btnPlanB.Size = New Size(237, 195)
         btnPlanB.TabIndex = 48
@@ -777,7 +681,7 @@ Partial Class DashboardForm
         btnPlanA.BackgroundImage = CType(resources.GetObject("btnPlanA.BackgroundImage"), Image)
         btnPlanA.FlatAppearance.BorderSize = 0
         btnPlanA.FlatStyle = FlatStyle.Flat
-        btnPlanA.Location = New Point(44, 135)
+        btnPlanA.Location = New Point(-6, 135)
         btnPlanA.Name = "btnPlanA"
         btnPlanA.Size = New Size(225, 195)
         btnPlanA.TabIndex = 47
@@ -988,9 +892,9 @@ Partial Class DashboardForm
         pnlDebts.Controls.Add(Label36)
         pnlDebts.Controls.Add(Label37)
         pnlDebts.Controls.Add(txbDebt)
-        pnlDebts.Location = New Point(470, 107)
+        pnlDebts.Location = New Point(447, 107)
         pnlDebts.Name = "pnlDebts"
-        pnlDebts.Size = New Size(418, 442)
+        pnlDebts.Size = New Size(452, 442)
         pnlDebts.TabIndex = 12
         pnlDebts.Visible = False
         ' 
@@ -1099,9 +1003,9 @@ Partial Class DashboardForm
         pnlWithdraw.Controls.Add(Label44)
         pnlWithdraw.Controls.Add(Label45)
         pnlWithdraw.Controls.Add(txbWithdraw)
-        pnlWithdraw.Location = New Point(470, 104)
+        pnlWithdraw.Location = New Point(453, 104)
         pnlWithdraw.Name = "pnlWithdraw"
-        pnlWithdraw.Size = New Size(418, 445)
+        pnlWithdraw.Size = New Size(440, 462)
         pnlWithdraw.TabIndex = 13
         pnlWithdraw.Visible = False
         ' 
@@ -1199,26 +1103,291 @@ Partial Class DashboardForm
         txbWithdraw.Size = New Size(326, 31)
         txbWithdraw.TabIndex = 47
         ' 
+        ' pnlDashButtons
+        ' 
+        pnlDashButtons.Controls.Add(btnViewRecords)
+        pnlDashButtons.Controls.Add(btnPayDebts)
+        pnlDashButtons.Controls.Add(btnLogExp)
+        pnlDashButtons.Controls.Add(btnEditSalary)
+        pnlDashButtons.Location = New Point(267, 565)
+        pnlDashButtons.Name = "pnlDashButtons"
+        pnlDashButtons.Size = New Size(817, 36)
+        pnlDashButtons.TabIndex = 57
+        pnlDashButtons.Visible = False
+        ' 
+        ' btnViewRecords
+        ' 
+        btnViewRecords.BackColor = Color.Transparent
+        btnViewRecords.FlatAppearance.BorderSize = 0
+        btnViewRecords.FlatStyle = FlatStyle.Flat
+        btnViewRecords.Font = New Font("Cambria", 9F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        btnViewRecords.ForeColor = Color.FromArgb(CByte(19), CByte(94), CByte(86))
+        btnViewRecords.ImageAlign = ContentAlignment.MiddleLeft
+        btnViewRecords.Location = New Point(399, 0)
+        btnViewRecords.Name = "btnViewRecords"
+        btnViewRecords.Padding = New Padding(9, 0, 0, 0)
+        btnViewRecords.Size = New Size(149, 36)
+        btnViewRecords.TabIndex = 12
+        btnViewRecords.Text = "VIEW RECORDS"
+        btnViewRecords.TextAlign = ContentAlignment.MiddleLeft
+        btnViewRecords.UseVisualStyleBackColor = False
+        ' 
+        ' btnPayDebts
+        ' 
+        btnPayDebts.BackColor = Color.Transparent
+        btnPayDebts.FlatAppearance.BorderSize = 0
+        btnPayDebts.FlatStyle = FlatStyle.Flat
+        btnPayDebts.Font = New Font("Cambria", 9F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        btnPayDebts.ForeColor = Color.FromArgb(CByte(19), CByte(94), CByte(86))
+        btnPayDebts.ImageAlign = ContentAlignment.MiddleLeft
+        btnPayDebts.Location = New Point(266, 0)
+        btnPayDebts.Name = "btnPayDebts"
+        btnPayDebts.Padding = New Padding(9, 0, 0, 0)
+        btnPayDebts.Size = New Size(143, 36)
+        btnPayDebts.TabIndex = 11
+        btnPayDebts.Text = "PAY DEBTS"
+        btnPayDebts.TextAlign = ContentAlignment.MiddleLeft
+        btnPayDebts.UseVisualStyleBackColor = False
+        ' 
+        ' btnLogExp
+        ' 
+        btnLogExp.BackColor = Color.Transparent
+        btnLogExp.FlatAppearance.BorderSize = 0
+        btnLogExp.FlatStyle = FlatStyle.Flat
+        btnLogExp.Font = New Font("Cambria", 9F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        btnLogExp.ForeColor = Color.FromArgb(CByte(19), CByte(94), CByte(86))
+        btnLogExp.ImageAlign = ContentAlignment.MiddleLeft
+        btnLogExp.Location = New Point(125, 0)
+        btnLogExp.Name = "btnLogExp"
+        btnLogExp.Padding = New Padding(9, 0, 0, 0)
+        btnLogExp.Size = New Size(149, 36)
+        btnLogExp.TabIndex = 10
+        btnLogExp.Text = "LOG EXPENSES"
+        btnLogExp.TextAlign = ContentAlignment.MiddleLeft
+        btnLogExp.UseVisualStyleBackColor = False
+        ' 
+        ' Panel1
+        ' 
+        Panel1.BackColor = Color.WhiteSmoke
+        Panel1.BorderStyle = BorderStyle.FixedSingle
+        Panel1.Controls.Add(btnAccSettings)
+        Panel1.Controls.Add(btnWithdraww)
+        Panel1.Controls.Add(btnLogout)
+        Panel1.Controls.Add(PictureBox1)
+        Panel1.Controls.Add(btnDashboard)
+        Panel1.Controls.Add(Label46)
+        Panel1.Controls.Add(Label49)
+        Panel1.Location = New Point(-2, 107)
+        Panel1.Name = "Panel1"
+        Panel1.Size = New Size(270, 494)
+        Panel1.TabIndex = 58
+        ' 
+        ' btnAccSettings
+        ' 
+        btnAccSettings.BackColor = Color.Transparent
+        btnAccSettings.FlatAppearance.BorderSize = 0
+        btnAccSettings.FlatStyle = FlatStyle.Flat
+        btnAccSettings.Font = New Font("Cambria", 9F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        btnAccSettings.ForeColor = Color.FromArgb(CByte(19), CByte(94), CByte(86))
+        btnAccSettings.ImageAlign = ContentAlignment.MiddleLeft
+        btnAccSettings.Location = New Point(3, 274)
+        btnAccSettings.Name = "btnAccSettings"
+        btnAccSettings.Padding = New Padding(9, 0, 0, 0)
+        btnAccSettings.Size = New Size(266, 36)
+        btnAccSettings.TabIndex = 49
+        btnAccSettings.Text = "ALLOCATION SETTINGS"
+        btnAccSettings.TextAlign = ContentAlignment.MiddleLeft
+        btnAccSettings.UseVisualStyleBackColor = False
+        ' 
+        ' btnWithdraww
+        ' 
+        btnWithdraww.BackColor = Color.Transparent
+        btnWithdraww.FlatAppearance.BorderSize = 0
+        btnWithdraww.FlatStyle = FlatStyle.Flat
+        btnWithdraww.Font = New Font("Cambria", 9F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        btnWithdraww.ForeColor = Color.FromArgb(CByte(19), CByte(94), CByte(86))
+        btnWithdraww.ImageAlign = ContentAlignment.MiddleLeft
+        btnWithdraww.Location = New Point(5, 315)
+        btnWithdraww.Name = "btnWithdraww"
+        btnWithdraww.Padding = New Padding(9, 0, 0, 0)
+        btnWithdraww.Size = New Size(264, 36)
+        btnWithdraww.TabIndex = 48
+        btnWithdraww.Text = "WITHDRAW SAVINGS"
+        btnWithdraww.TextAlign = ContentAlignment.MiddleLeft
+        btnWithdraww.UseVisualStyleBackColor = False
+        ' 
+        ' btnLogout
+        ' 
+        btnLogout.BackColor = Color.Transparent
+        btnLogout.FlatAppearance.BorderSize = 0
+        btnLogout.FlatStyle = FlatStyle.Flat
+        btnLogout.Font = New Font("Cambria", 9F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        btnLogout.ForeColor = Color.FromArgb(CByte(19), CByte(94), CByte(86))
+        btnLogout.ImageAlign = ContentAlignment.MiddleLeft
+        btnLogout.Location = New Point(5, 238)
+        btnLogout.Name = "btnLogout"
+        btnLogout.Padding = New Padding(9, 0, 0, 0)
+        btnLogout.Size = New Size(264, 36)
+        btnLogout.TabIndex = 47
+        btnLogout.Text = "LOG OUT"
+        btnLogout.TextAlign = ContentAlignment.MiddleLeft
+        btnLogout.UseVisualStyleBackColor = False
+        ' 
+        ' PictureBox1
+        ' 
+        PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
+        PictureBox1.Location = New Point(0, -17)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(142, 143)
+        PictureBox1.TabIndex = 46
+        PictureBox1.TabStop = False
+        ' 
+        ' btnDashboard
+        ' 
+        btnDashboard.BackColor = Color.Transparent
+        btnDashboard.FlatAppearance.BorderSize = 0
+        btnDashboard.FlatStyle = FlatStyle.Flat
+        btnDashboard.Font = New Font("Cambria", 9F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        btnDashboard.ForeColor = Color.FromArgb(CByte(19), CByte(94), CByte(86))
+        btnDashboard.ImageAlign = ContentAlignment.MiddleLeft
+        btnDashboard.Location = New Point(3, 202)
+        btnDashboard.Name = "btnDashboard"
+        btnDashboard.Padding = New Padding(9, 0, 0, 0)
+        btnDashboard.Size = New Size(266, 36)
+        btnDashboard.TabIndex = 45
+        btnDashboard.Text = "DASHBOARD"
+        btnDashboard.TextAlign = ContentAlignment.MiddleLeft
+        btnDashboard.UseVisualStyleBackColor = False
+        ' 
+        ' Label46
+        ' 
+        Label46.AutoSize = True
+        Label46.BackColor = Color.WhiteSmoke
+        Label46.Font = New Font("Cambria", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label46.ForeColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
+        Label46.Location = New Point(20, 167)
+        Label46.Name = "Label46"
+        Label46.Size = New Size(188, 17)
+        Label46.TabIndex = 44
+        Label46.Text = "Let's save and spend wise!"
+        ' 
+        ' Label49
+        ' 
+        Label49.AutoSize = True
+        Label49.BackColor = Color.WhiteSmoke
+        Label49.Font = New Font("Cambria", 10.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label49.Location = New Point(20, 142)
+        Label49.Name = "Label49"
+        Label49.Size = New Size(97, 21)
+        Label49.TabIndex = 40
+        Label49.Text = "Hey Kitch!"
+        ' 
+        ' pnlDashh
+        ' 
+        pnlDashh.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        pnlDashh.Controls.Add(Label39)
+        pnlDashh.Controls.Add(PictureBox2)
+        pnlDashh.Location = New Point(892, 107)
+        pnlDashh.Name = "pnlDashh"
+        pnlDashh.Size = New Size(187, 494)
+        pnlDashh.TabIndex = 58
+        pnlDashh.Visible = False
+        ' 
+        ' Label39
+        ' 
+        Label39.AutoSize = True
+        Label39.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        Label39.Font = New Font("Cambria", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label39.Location = New Point(13, 51)
+        Label39.Name = "Label39"
+        Label39.Size = New Size(157, 20)
+        Label39.TabIndex = 39
+        Label39.Text = "LATEST UPDATE 📣"
+        ' 
+        ' PictureBox2
+        ' 
+        PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), Image)
+        PictureBox2.Location = New Point(13, 89)
+        PictureBox2.Name = "PictureBox2"
+        PictureBox2.Size = New Size(164, 143)
+        PictureBox2.TabIndex = 50
+        PictureBox2.TabStop = False
+        ' 
+        ' pnlDash
+        ' 
+        pnlDash.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        pnlDash.Controls.Add(Label47)
+        pnlDash.Controls.Add(Label40)
+        pnlDash.Controls.Add(CheckedListBox1)
+        pnlDash.Location = New Point(267, 107)
+        pnlDash.Name = "pnlDash"
+        pnlDash.Size = New Size(187, 494)
+        pnlDash.TabIndex = 57
+        pnlDash.Visible = False
+        ' 
+        ' Label47
+        ' 
+        Label47.AutoSize = True
+        Label47.Font = New Font("Cambria", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label47.Location = New Point(15, 54)
+        Label47.Name = "Label47"
+        Label47.Size = New Size(139, 51)
+        Label47.TabIndex = 2
+        Label47.Text = "CONNECT TO YOUR" & vbCrLf & "E-WALLET 💰" & vbCrLf & vbCrLf
+        ' 
+        ' Label40
+        ' 
+        Label40.AutoSize = True
+        Label40.Font = New Font("Cambria", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label40.Location = New Point(7, 218)
+        Label40.Name = "Label40"
+        Label40.Size = New Size(99, 17)
+        Label40.TabIndex = 1
+        Label40.Text = "📌 To-Do List"
+        ' 
+        ' CheckedListBox1
+        ' 
+        CheckedListBox1.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        CheckedListBox1.BorderStyle = BorderStyle.None
+        CheckedListBox1.Font = New Font("Gadugi", 7.5F, FontStyle.Bold)
+        CheckedListBox1.FormattingEnabled = True
+        CheckedListBox1.Items.AddRange(New Object() {"Setup Salary Allocation", "Log daily expenses", "Exlpore the app"})
+        CheckedListBox1.Location = New Point(7, 253)
+        CheckedListBox1.Name = "CheckedListBox1"
+        CheckedListBox1.Size = New Size(184, 114)
+        CheckedListBox1.TabIndex = 0
+        ' 
+        ' pnlVieRecord
+        ' 
+        pnlVieRecord.Location = New Point(267, 107)
+        pnlVieRecord.Name = "pnlVieRecord"
+        pnlVieRecord.Size = New Size(814, 462)
+        pnlVieRecord.TabIndex = 59
+        pnlVieRecord.Visible = False
+        ' 
         ' DashboardForm
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
-        ClientSize = New Size(1078, 602)
-        Controls.Add(Panel3)
-        Controls.Add(Panel2)
-        Controls.Add(btnExit)
-        Controls.Add(pnlDebts)
-        Controls.Add(pnlLogExpenses)
-        Controls.Add(pnlDashboard)
-        Controls.Add(pnlUpdateSalary)
-        Controls.Add(pnlAllocationSettings)
+        ClientSize = New Size(1078, 643)
         Controls.Add(pnlWithdraw)
+        Controls.Add(pnlDashButtons)
+        Controls.Add(pnlDashh)
+        Controls.Add(pnlDash)
+        Controls.Add(Panel1)
+        Controls.Add(Panel3)
+        Controls.Add(btnExit)
+        Controls.Add(pnlDashboard)
+        Controls.Add(pnlDebts)
+        Controls.Add(pnlUpdateSalary)
+        Controls.Add(pnlLogExpenses)
+        Controls.Add(pnlVieRecord)
+        Controls.Add(pnlAllocationSettings)
         FormBorderStyle = FormBorderStyle.None
         Name = "DashboardForm"
         StartPosition = FormStartPosition.CenterScreen
         Text = "DashboardForm"
-        Panel2.ResumeLayout(False)
         pnlDashboard.ResumeLayout(False)
         pnlDashboard.PerformLayout()
         Panel4.ResumeLayout(False)
@@ -1233,16 +1402,21 @@ Partial Class DashboardForm
         pnlDebts.PerformLayout()
         pnlWithdraw.ResumeLayout(False)
         pnlWithdraw.PerformLayout()
+        pnlDashButtons.ResumeLayout(False)
+        Panel1.ResumeLayout(False)
+        Panel1.PerformLayout()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
+        pnlDashh.ResumeLayout(False)
+        pnlDashh.PerformLayout()
+        CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
+        pnlDash.ResumeLayout(False)
+        pnlDash.PerformLayout()
         ResumeLayout(False)
     End Sub
 
     Friend WithEvents btnExit As Button
-    Friend WithEvents Panel2 As Panel
-    Friend WithEvents btnAllocationSetting As Button
     Friend WithEvents Panel3 As Panel
     Friend WithEvents btnDashboard As Button
-    Friend WithEvents btnLogExpenses As Button
-    Friend WithEvents btnViewRec As Button
     Friend WithEvents btnEditSalary As Button
     Friend WithEvents pnlDashboard As Panel
     Friend WithEvents Label1 As Label
@@ -1304,7 +1478,6 @@ Partial Class DashboardForm
     Friend WithEvents pnlLogExpenses As Panel
     Friend WithEvents btnDone As Button
     Friend WithEvents btnWithdraw As Button
-    Friend WithEvents btnPayDebts As Button
     Friend WithEvents Label28 As Label
     Friend WithEvents pnlDebts As Panel
     Friend WithEvents lblDebtBudget As Label
@@ -1324,4 +1497,23 @@ Partial Class DashboardForm
     Friend WithEvents Label44 As Label
     Friend WithEvents Label45 As Label
     Friend WithEvents txbWithdraw As TextBox
+    Friend WithEvents pnlDashButtons As Panel
+    Friend WithEvents btnPayDebts As Button
+    Friend WithEvents btnLogExp As Button
+    Friend WithEvents btnViewRecords As Button
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents Label46 As Label
+    Friend WithEvents Label49 As Label
+    Friend WithEvents btnLogout As Button
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents btnAccSettings As Button
+    Friend WithEvents btnWithdraww As Button
+    Friend WithEvents pnlDashh As Panel
+    Friend WithEvents Label39 As Label
+    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents pnlDash As Panel
+    Friend WithEvents Label40 As Label
+    Friend WithEvents CheckedListBox1 As CheckedListBox
+    Friend WithEvents Label47 As Label
+    Friend WithEvents pnlVieRecord As Panel
 End Class

@@ -18,4 +18,12 @@
         Application.Exit()
 
     End Sub
+
+    Private Sub btnPlanA_Click(sender As Object, e As EventArgs) Handles btnPlanA.Click
+        'Plan a computation + display
+    End Sub
+
+    Private Sub btnPlanB_Click(sender As Object, e As EventArgs) Handles btnPlanB.Click
+        'plan b computation + display
+    End Sub
 End Class
