@@ -1,6 +1,8 @@
 ﻿Public Class SalaryAllocationForm
+    Public AccountID As Integer
+    Private salary As Double
     Private Sub btnEnterSalary_Click(sender As Object, e As EventArgs) Handles btnEnterSalary.Click
-        Dim salary As Double = txbSalary.Text
+        salary = txbSalary.Text
         pnlGreat.Visible = False
         pnlAllocationPlan.Visible = False
 

@@ -42,13 +42,13 @@ Partial Class SalaryAllocationForm
         Label13 = New Label()
         Label14 = New Label()
         Label15 = New Label()
-        pnlAllocationPlan = New Panel()
         Button3 = New Button()
         Button1 = New Button()
         Label16 = New Label()
         Label17 = New Label()
         Label18 = New Label()
         pnlGreat = New Panel()
+        pnlAllocationPlan = New Panel()
         SuspendLayout()
         ' 
         ' txbSalary
@@ -276,14 +276,6 @@ Partial Class SalaryAllocationForm
         Label15.TabIndex = 46
         Label15.Text = "     15%" & vbCrLf & " Wants" & vbCrLf
         ' 
-        ' pnlAllocationPlan
-        ' 
-        pnlAllocationPlan.BackColor = Color.WhiteSmoke
-        pnlAllocationPlan.Location = New Point(456, 101)
-        pnlAllocationPlan.Name = "pnlAllocationPlan"
-        pnlAllocationPlan.Size = New Size(557, 411)
-        pnlAllocationPlan.TabIndex = 47
-        ' 
         ' Button3
         ' 
         Button3.BackColor = Color.WhiteSmoke
@@ -353,6 +345,14 @@ Partial Class SalaryAllocationForm
         pnlGreat.Size = New Size(366, 143)
         pnlGreat.TabIndex = 48
         ' 
+        ' pnlAllocationPlan
+        ' 
+        pnlAllocationPlan.BackColor = Color.WhiteSmoke
+        pnlAllocationPlan.Location = New Point(456, 101)
+        pnlAllocationPlan.Name = "pnlAllocationPlan"
+        pnlAllocationPlan.Size = New Size(557, 411)
+        pnlAllocationPlan.TabIndex = 47
+        ' 
         ' SalaryAllocationForm
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -411,11 +411,11 @@ Partial Class SalaryAllocationForm
     Friend WithEvents Label13 As Label
     Friend WithEvents Label14 As Label
     Friend WithEvents Label15 As Label
-    Friend WithEvents pnlAllocationPlan As Panel
     Friend WithEvents Button3 As Button
     Friend WithEvents Button1 As Button
     Friend WithEvents Label16 As Label
     Friend WithEvents Label17 As Label
     Friend WithEvents Label18 As Label
     Friend WithEvents pnlGreat As Panel
+    Friend WithEvents pnlAllocationPlan As Panel
 End Class
