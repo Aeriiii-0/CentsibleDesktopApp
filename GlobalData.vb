@@ -1,4 +1,6 @@
-﻿Module GlobalData
+﻿Imports System.Data.SqlClient
+Imports System.Data.DataTable
+Module GlobalData
     Public Connector As SqlServerConnector = Nothing
     Dim Conn As New SqlClient.SqlConnection("Server=ARRA\SQLEXPRESS02;Database=DBCentsible;Integrated Security=True;")
 
@@ -120,4 +122,20 @@ WHERE
         End Using
         Return totalExpense
     End Function
+
+
+    Public Function ViewExpenseRecord(AccountID As Integer) As DataTable
+        Dim dt As New DataTable()
+        Using cmd As New SqlClient.SqlCommand("SELECT Amount, Type, DateChanged FROM Expenses WHERE AccountID = @AccountID", Conn)
+            cmd.Parameters.AddWithValue("@AccountID", AccountID)
+            Conn.Open()
+            Using reader As SqlClient.SqlDataReader = cmd.ExecuteReader()
+                dt.Load(reader)
+            End Using
+            Conn.Close()
+        End Using
+        Return dt
+    End Function
+
+
 End Module

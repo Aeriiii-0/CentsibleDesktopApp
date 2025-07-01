@@ -112,9 +112,9 @@ Partial Class SalaryAllocationForm
         ' btnPlanA
         ' 
         btnPlanA.BackColor = Color.WhiteSmoke
-        btnPlanA.BackgroundImage = CType(resources.GetObject("btnPlanA.BackgroundImage"), Image)
         btnPlanA.FlatAppearance.BorderSize = 0
         btnPlanA.FlatStyle = FlatStyle.Flat
+        btnPlanA.Image = CType(resources.GetObject("btnPlanA.Image"), Image)
         btnPlanA.Location = New Point(487, 236)
         btnPlanA.Name = "btnPlanA"
         btnPlanA.Size = New Size(225, 195)
@@ -124,9 +124,10 @@ Partial Class SalaryAllocationForm
         ' btnPlanB
         ' 
         btnPlanB.BackColor = Color.WhiteSmoke
-        btnPlanB.BackgroundImage = CType(resources.GetObject("btnPlanB.BackgroundImage"), Image)
+        btnPlanB.BackgroundImageLayout = ImageLayout.None
         btnPlanB.FlatAppearance.BorderSize = 0
         btnPlanB.FlatStyle = FlatStyle.Flat
+        btnPlanB.Image = CType(resources.GetObject("btnPlanB.Image"), Image)
         btnPlanB.Location = New Point(735, 236)
         btnPlanB.Name = "btnPlanB"
         btnPlanB.Size = New Size(237, 195)
@@ -198,7 +199,7 @@ Partial Class SalaryAllocationForm
         Label9.BackColor = Color.FromArgb(CByte(0), CByte(123), CByte(124))
         Label9.Font = New Font("Cambria", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label9.ForeColor = Color.White
-        Label9.Location = New Point(546, 267)
+        Label9.Location = New Point(540, 267)
         Label9.Name = "Label9"
         Label9.Size = New Size(53, 34)
         Label9.TabIndex = 40
@@ -210,7 +211,7 @@ Partial Class SalaryAllocationForm
         Label10.BackColor = Color.FromArgb(CByte(98), CByte(171), CByte(171))
         Label10.Font = New Font("Cambria", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label10.ForeColor = Color.White
-        Label10.Location = New Point(532, 338)
+        Label10.Location = New Point(522, 338)
         Label10.Name = "Label10"
         Label10.Size = New Size(64, 34)
         Label10.TabIndex = 41
@@ -234,7 +235,7 @@ Partial Class SalaryAllocationForm
         Label12.BackColor = Color.FromArgb(CByte(0), CByte(123), CByte(124))
         Label12.Font = New Font("Cambria", 6F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label12.ForeColor = Color.White
-        Label12.Location = New Point(778, 289)
+        Label12.Location = New Point(782, 289)
         Label12.Name = "Label12"
         Label12.Size = New Size(37, 24)
         Label12.TabIndex = 43
@@ -270,11 +271,11 @@ Partial Class SalaryAllocationForm
         Label15.BackColor = Color.FromArgb(CByte(0), CByte(99), CByte(98))
         Label15.Font = New Font("Cambria", 6F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label15.ForeColor = Color.White
-        Label15.Location = New Point(820, 257)
+        Label15.Location = New Point(820, 255)
         Label15.Name = "Label15"
         Label15.Size = New Size(37, 24)
         Label15.TabIndex = 46
-        Label15.Text = "     15%" & vbCrLf & " Wants" & vbCrLf
+        Label15.Text = "     10%" & vbCrLf & " Wants" & vbCrLf
         ' 
         ' Button3
         ' 
@@ -359,7 +360,6 @@ Partial Class SalaryAllocationForm
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         ClientSize = New Size(1078, 602)
-        Controls.Add(pnlAllocationPlan)
         Controls.Add(pnlGreat)
         Controls.Add(Label18)
         Controls.Add(Label16)
@@ -385,6 +385,7 @@ Partial Class SalaryAllocationForm
         Controls.Add(Label2)
         Controls.Add(Label1)
         Controls.Add(txbSalary)
+        Controls.Add(pnlAllocationPlan)
         FormBorderStyle = FormBorderStyle.None
         Name = "SalaryAllocationForm"
         StartPosition = FormStartPosition.CenterScreen
@@ -409,7 +410,6 @@ Partial Class SalaryAllocationForm
     Friend WithEvents Label11 As Label
     Friend WithEvents Label12 As Label
     Friend WithEvents Label13 As Label
-    Friend WithEvents Label14 As Label
     Friend WithEvents Label15 As Label
     Friend WithEvents Button3 As Button
     Friend WithEvents Button1 As Button
@@ -418,4 +418,5 @@ Partial Class SalaryAllocationForm
     Friend WithEvents Label18 As Label
     Friend WithEvents pnlGreat As Panel
     Friend WithEvents pnlAllocationPlan As Panel
+    Private WithEvents Label14 As Label
 End Class

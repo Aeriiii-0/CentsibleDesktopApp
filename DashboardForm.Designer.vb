@@ -47,6 +47,7 @@ Partial Class DashboardForm
         lblSalaryLeft = New Label()
         Panel5 = New Panel()
         pnlUpdateSalary = New Panel()
+        Button4 = New Button()
         Label12 = New Label()
         btnEnterSalary = New Button()
         Label9 = New Label()
@@ -54,6 +55,7 @@ Partial Class DashboardForm
         Label11 = New Label()
         txbSalary = New TextBox()
         pnlAllocationSettings = New Panel()
+        Button6 = New Button()
         btnDoneAlloc = New Button()
         Label15 = New Label()
         Label14 = New Label()
@@ -84,9 +86,11 @@ Partial Class DashboardForm
         Label34 = New Label()
         txbTranspo = New TextBox()
         pnlLogExpenses = New Panel()
+        Button5 = New Button()
         Label28 = New Label()
         btnDone = New Button()
         pnlDebts = New Panel()
+        Button3 = New Button()
         lblDebtBudget = New Label()
         Label38 = New Label()
         Label33 = New Label()
@@ -96,6 +100,7 @@ Partial Class DashboardForm
         Label37 = New Label()
         txbDebt = New TextBox()
         pnlWithdraw = New Panel()
+        btnBack = New Button()
         lblSavingsTotal = New Label()
         Label41 = New Label()
         Label42 = New Label()
@@ -124,6 +129,7 @@ Partial Class DashboardForm
         Label40 = New Label()
         CheckedListBox1 = New CheckedListBox()
         pnlVieRecord = New Panel()
+        DataGridViewExpenses = New DataGridView()
         pnlDashboard.SuspendLayout()
         Panel4.SuspendLayout()
         pnlUpdateSalary.SuspendLayout()
@@ -137,6 +143,8 @@ Partial Class DashboardForm
         pnlDashh.SuspendLayout()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         pnlDash.SuspendLayout()
+        pnlVieRecord.SuspendLayout()
+        CType(DataGridViewExpenses, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' btnExit
@@ -400,6 +408,7 @@ Partial Class DashboardForm
         ' pnlUpdateSalary
         ' 
         pnlUpdateSalary.BackColor = Color.WhiteSmoke
+        pnlUpdateSalary.Controls.Add(Button4)
         pnlUpdateSalary.Controls.Add(Label12)
         pnlUpdateSalary.Controls.Add(btnEnterSalary)
         pnlUpdateSalary.Controls.Add(Label9)
@@ -408,9 +417,26 @@ Partial Class DashboardForm
         pnlUpdateSalary.Controls.Add(txbSalary)
         pnlUpdateSalary.Location = New Point(450, 107)
         pnlUpdateSalary.Name = "pnlUpdateSalary"
-        pnlUpdateSalary.Size = New Size(446, 442)
+        pnlUpdateSalary.Size = New Size(446, 459)
         pnlUpdateSalary.TabIndex = 9
         pnlUpdateSalary.Visible = False
+        ' 
+        ' Button4
+        ' 
+        Button4.BackColor = Color.Transparent
+        Button4.FlatAppearance.BorderSize = 0
+        Button4.FlatStyle = FlatStyle.Flat
+        Button4.Font = New Font("Cambria", 9F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        Button4.ForeColor = Color.FromArgb(CByte(19), CByte(94), CByte(86))
+        Button4.ImageAlign = ContentAlignment.MiddleLeft
+        Button4.Location = New Point(3, 423)
+        Button4.Name = "Button4"
+        Button4.Padding = New Padding(9, 0, 0, 0)
+        Button4.Size = New Size(128, 36)
+        Button4.TabIndex = 13
+        Button4.Text = "Back"
+        Button4.TextAlign = ContentAlignment.MiddleLeft
+        Button4.UseVisualStyleBackColor = False
         ' 
         ' Label12
         ' 
@@ -431,7 +457,7 @@ Partial Class DashboardForm
         btnEnterSalary.FlatStyle = FlatStyle.Flat
         btnEnterSalary.Font = New Font("Cambria", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnEnterSalary.Image = CType(resources.GetObject("btnEnterSalary.Image"), Image)
-        btnEnterSalary.Location = New Point(246, 287)
+        btnEnterSalary.Location = New Point(314, 332)
         btnEnterSalary.Name = "btnEnterSalary"
         btnEnterSalary.Size = New Size(107, 34)
         btnEnterSalary.TabIndex = 37
@@ -479,12 +505,13 @@ Partial Class DashboardForm
         txbSalary.Font = New Font("Gadugi", 10.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         txbSalary.Location = New Point(49, 184)
         txbSalary.Name = "txbSalary"
-        txbSalary.Size = New Size(319, 31)
+        txbSalary.Size = New Size(346, 31)
         txbSalary.TabIndex = 33
         ' 
         ' pnlAllocationSettings
         ' 
         pnlAllocationSettings.BackColor = Color.WhiteSmoke
+        pnlAllocationSettings.Controls.Add(Button6)
         pnlAllocationSettings.Controls.Add(btnDoneAlloc)
         pnlAllocationSettings.Controls.Add(Label15)
         pnlAllocationSettings.Controls.Add(Label14)
@@ -505,6 +532,23 @@ Partial Class DashboardForm
         pnlAllocationSettings.Size = New Size(446, 459)
         pnlAllocationSettings.TabIndex = 10
         pnlAllocationSettings.Visible = False
+        ' 
+        ' Button6
+        ' 
+        Button6.BackColor = Color.Transparent
+        Button6.FlatAppearance.BorderSize = 0
+        Button6.FlatStyle = FlatStyle.Flat
+        Button6.Font = New Font("Cambria", 9F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        Button6.ForeColor = Color.FromArgb(CByte(19), CByte(94), CByte(86))
+        Button6.ImageAlign = ContentAlignment.MiddleLeft
+        Button6.Location = New Point(-3, 423)
+        Button6.Name = "Button6"
+        Button6.Padding = New Padding(9, 0, 0, 0)
+        Button6.Size = New Size(128, 36)
+        Button6.TabIndex = 13
+        Button6.Text = "Back"
+        Button6.TextAlign = ContentAlignment.MiddleLeft
+        Button6.UseVisualStyleBackColor = False
         ' 
         ' btnDoneAlloc
         ' 
@@ -530,7 +574,7 @@ Partial Class DashboardForm
         Label15.Name = "Label15"
         Label15.Size = New Size(37, 24)
         Label15.TabIndex = 60
-        Label15.Text = "     15%" & vbCrLf & " Wants" & vbCrLf
+        Label15.Text = "     10%" & vbCrLf & " Wants" & vbCrLf
         ' 
         ' Label14
         ' 
@@ -833,6 +877,7 @@ Partial Class DashboardForm
         ' pnlLogExpenses
         ' 
         pnlLogExpenses.BackColor = Color.WhiteSmoke
+        pnlLogExpenses.Controls.Add(Button5)
         pnlLogExpenses.Controls.Add(Label28)
         pnlLogExpenses.Controls.Add(btnDone)
         pnlLogExpenses.Controls.Add(txbTranspo)
@@ -851,9 +896,26 @@ Partial Class DashboardForm
         pnlLogExpenses.Controls.Add(txbRent)
         pnlLogExpenses.Location = New Point(267, 107)
         pnlLogExpenses.Name = "pnlLogExpenses"
-        pnlLogExpenses.Size = New Size(812, 442)
+        pnlLogExpenses.Size = New Size(812, 462)
         pnlLogExpenses.TabIndex = 11
         pnlLogExpenses.Visible = False
+        ' 
+        ' Button5
+        ' 
+        Button5.BackColor = Color.Transparent
+        Button5.FlatAppearance.BorderSize = 0
+        Button5.FlatStyle = FlatStyle.Flat
+        Button5.Font = New Font("Cambria", 9F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        Button5.ForeColor = Color.FromArgb(CByte(19), CByte(94), CByte(86))
+        Button5.ImageAlign = ContentAlignment.MiddleLeft
+        Button5.Location = New Point(750, 406)
+        Button5.Name = "Button5"
+        Button5.Padding = New Padding(9, 0, 0, 0)
+        Button5.Size = New Size(62, 36)
+        Button5.TabIndex = 57
+        Button5.Text = "Back"
+        Button5.TextAlign = ContentAlignment.MiddleLeft
+        Button5.UseVisualStyleBackColor = False
         ' 
         ' Label28
         ' 
@@ -884,6 +946,7 @@ Partial Class DashboardForm
         ' pnlDebts
         ' 
         pnlDebts.BackColor = Color.WhiteSmoke
+        pnlDebts.Controls.Add(Button3)
         pnlDebts.Controls.Add(lblDebtBudget)
         pnlDebts.Controls.Add(Label38)
         pnlDebts.Controls.Add(Label33)
@@ -894,9 +957,26 @@ Partial Class DashboardForm
         pnlDebts.Controls.Add(txbDebt)
         pnlDebts.Location = New Point(447, 107)
         pnlDebts.Name = "pnlDebts"
-        pnlDebts.Size = New Size(452, 442)
+        pnlDebts.Size = New Size(449, 459)
         pnlDebts.TabIndex = 12
         pnlDebts.Visible = False
+        ' 
+        ' Button3
+        ' 
+        Button3.BackColor = Color.Transparent
+        Button3.FlatAppearance.BorderSize = 0
+        Button3.FlatStyle = FlatStyle.Flat
+        Button3.Font = New Font("Cambria", 9F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        Button3.ForeColor = Color.FromArgb(CByte(19), CByte(94), CByte(86))
+        Button3.ImageAlign = ContentAlignment.MiddleLeft
+        Button3.Location = New Point(0, 423)
+        Button3.Name = "Button3"
+        Button3.Padding = New Padding(9, 0, 0, 0)
+        Button3.Size = New Size(74, 36)
+        Button3.TabIndex = 47
+        Button3.Text = "Back"
+        Button3.TextAlign = ContentAlignment.MiddleLeft
+        Button3.UseVisualStyleBackColor = False
         ' 
         ' lblDebtBudget
         ' 
@@ -941,7 +1021,7 @@ Partial Class DashboardForm
         Button1.FlatStyle = FlatStyle.Flat
         Button1.Font = New Font("Cambria", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Button1.Image = CType(resources.GetObject("Button1.Image"), Image)
-        Button1.Location = New Point(268, 364)
+        Button1.Location = New Point(332, 372)
         Button1.Name = "Button1"
         Button1.Size = New Size(107, 34)
         Button1.TabIndex = 43
@@ -989,12 +1069,13 @@ Partial Class DashboardForm
         txbDebt.Font = New Font("Gadugi", 10.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         txbDebt.Location = New Point(48, 211)
         txbDebt.Name = "txbDebt"
-        txbDebt.Size = New Size(326, 31)
+        txbDebt.Size = New Size(350, 31)
         txbDebt.TabIndex = 39
         ' 
         ' pnlWithdraw
         ' 
         pnlWithdraw.BackColor = Color.WhiteSmoke
+        pnlWithdraw.Controls.Add(btnBack)
         pnlWithdraw.Controls.Add(lblSavingsTotal)
         pnlWithdraw.Controls.Add(Label41)
         pnlWithdraw.Controls.Add(Label42)
@@ -1008,6 +1089,23 @@ Partial Class DashboardForm
         pnlWithdraw.Size = New Size(440, 462)
         pnlWithdraw.TabIndex = 13
         pnlWithdraw.Visible = False
+        ' 
+        ' btnBack
+        ' 
+        btnBack.BackColor = Color.Transparent
+        btnBack.FlatAppearance.BorderSize = 0
+        btnBack.FlatStyle = FlatStyle.Flat
+        btnBack.Font = New Font("Cambria", 9F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        btnBack.ForeColor = Color.FromArgb(CByte(19), CByte(94), CByte(86))
+        btnBack.ImageAlign = ContentAlignment.MiddleLeft
+        btnBack.Location = New Point(0, 426)
+        btnBack.Name = "btnBack"
+        btnBack.Padding = New Padding(9, 0, 0, 0)
+        btnBack.Size = New Size(74, 36)
+        btnBack.TabIndex = 13
+        btnBack.Text = "Back"
+        btnBack.TextAlign = ContentAlignment.MiddleLeft
+        btnBack.UseVisualStyleBackColor = False
         ' 
         ' lblSavingsTotal
         ' 
@@ -1052,7 +1150,7 @@ Partial Class DashboardForm
         Button2.FlatStyle = FlatStyle.Flat
         Button2.Font = New Font("Cambria", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Button2.Image = CType(resources.GetObject("Button2.Image"), Image)
-        Button2.Location = New Point(266, 368)
+        Button2.Location = New Point(311, 384)
         Button2.Name = "Button2"
         Button2.Size = New Size(107, 34)
         Button2.TabIndex = 51
@@ -1236,7 +1334,7 @@ Partial Class DashboardForm
         ' PictureBox1
         ' 
         PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
-        PictureBox1.Location = New Point(0, -17)
+        PictureBox1.Location = New Point(2, -9)
         PictureBox1.Name = "PictureBox1"
         PictureBox1.Size = New Size(142, 143)
         PictureBox1.TabIndex = 46
@@ -1359,11 +1457,22 @@ Partial Class DashboardForm
         ' 
         ' pnlVieRecord
         ' 
+        pnlVieRecord.Controls.Add(DataGridViewExpenses)
         pnlVieRecord.Location = New Point(267, 107)
         pnlVieRecord.Name = "pnlVieRecord"
-        pnlVieRecord.Size = New Size(814, 462)
+        pnlVieRecord.Size = New Size(809, 462)
         pnlVieRecord.TabIndex = 59
         pnlVieRecord.Visible = False
+        ' 
+        ' DataGridViewExpenses
+        ' 
+        DataGridViewExpenses.BackgroundColor = SystemColors.ControlLight
+        DataGridViewExpenses.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridViewExpenses.Location = New Point(7, 8)
+        DataGridViewExpenses.Name = "DataGridViewExpenses"
+        DataGridViewExpenses.RowHeadersWidth = 51
+        DataGridViewExpenses.Size = New Size(795, 448)
+        DataGridViewExpenses.TabIndex = 0
         ' 
         ' DashboardForm
         ' 
@@ -1371,19 +1480,19 @@ Partial Class DashboardForm
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         ClientSize = New Size(1078, 643)
-        Controls.Add(pnlWithdraw)
         Controls.Add(pnlDashButtons)
         Controls.Add(pnlDashh)
         Controls.Add(pnlDash)
         Controls.Add(Panel1)
         Controls.Add(Panel3)
         Controls.Add(btnExit)
+        Controls.Add(pnlAllocationSettings)
+        Controls.Add(pnlWithdraw)
         Controls.Add(pnlDashboard)
         Controls.Add(pnlDebts)
         Controls.Add(pnlUpdateSalary)
         Controls.Add(pnlLogExpenses)
         Controls.Add(pnlVieRecord)
-        Controls.Add(pnlAllocationSettings)
         FormBorderStyle = FormBorderStyle.None
         Name = "DashboardForm"
         StartPosition = FormStartPosition.CenterScreen
@@ -1411,6 +1520,8 @@ Partial Class DashboardForm
         CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
         pnlDash.ResumeLayout(False)
         pnlDash.PerformLayout()
+        pnlVieRecord.ResumeLayout(False)
+        CType(DataGridViewExpenses, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
@@ -1516,4 +1627,10 @@ Partial Class DashboardForm
     Friend WithEvents CheckedListBox1 As CheckedListBox
     Friend WithEvents Label47 As Label
     Friend WithEvents pnlVieRecord As Panel
+    Friend WithEvents btnBack As Button
+    Friend WithEvents Button3 As Button
+    Friend WithEvents Button4 As Button
+    Friend WithEvents Button5 As Button
+    Friend WithEvents Button6 As Button
+    Friend WithEvents DataGridViewExpenses As DataGridView
 End Class

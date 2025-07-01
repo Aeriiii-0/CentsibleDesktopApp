@@ -14,6 +14,7 @@
         Else
             If (GlobalData.CheckLogin(username, password)) Then
                 AccountID = Convert.ToInt16(GlobalData.GetAccountID(username))
+
                 DashboardForm.AccountID = AccountID
                 DashboardForm.Show()
                 Me.Hide()

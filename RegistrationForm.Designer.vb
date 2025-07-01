@@ -43,6 +43,7 @@ Partial Class RegistrationForm
         btnNext = New Button()
         Label9 = New Label()
         txbConfirmPass = New TextBox()
+        Button1 = New Button()
         SuspendLayout()
         ' 
         ' btnExit
@@ -222,7 +223,7 @@ Partial Class RegistrationForm
         btnClear.FlatStyle = FlatStyle.Flat
         btnClear.Font = New Font("Gadugi", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnClear.Image = CType(resources.GetObject("btnClear.Image"), Image)
-        btnClear.Location = New Point(704, 476)
+        btnClear.Location = New Point(756, 476)
         btnClear.Name = "btnClear"
         btnClear.Size = New Size(158, 41)
         btnClear.TabIndex = 31
@@ -236,7 +237,7 @@ Partial Class RegistrationForm
         btnNext.FlatStyle = FlatStyle.Flat
         btnNext.Font = New Font("Gadugi", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnNext.Image = CType(resources.GetObject("btnNext.Image"), Image)
-        btnNext.Location = New Point(864, 476)
+        btnNext.Location = New Point(908, 476)
         btnNext.Name = "btnNext"
         btnNext.Size = New Size(158, 41)
         btnNext.TabIndex = 32
@@ -262,6 +263,20 @@ Partial Class RegistrationForm
         txbConfirmPass.Name = "txbConfirmPass"
         txbConfirmPass.Size = New Size(301, 27)
         txbConfirmPass.TabIndex = 33
+        ' 
+        ' Button1
+        ' 
+        Button1.BackColor = Color.WhiteSmoke
+        Button1.FlatAppearance.BorderSize = 0
+        Button1.FlatStyle = FlatStyle.Flat
+        Button1.Font = New Font("Gadugi", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button1.Image = CType(resources.GetObject("Button1.Image"), Image)
+        Button1.Location = New Point(605, 476)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(158, 41)
+        Button1.TabIndex = 35
+        Button1.Text = "Back"
+        Button1.UseVisualStyleBackColor = False
         ' 
         ' RegistrationForm
         ' 
@@ -289,6 +304,7 @@ Partial Class RegistrationForm
         Controls.Add(Label4)
         Controls.Add(txbFName)
         Controls.Add(btnExit)
+        Controls.Add(Button1)
         FormBorderStyle = FormBorderStyle.None
         Name = "RegistrationForm"
         StartPosition = FormStartPosition.CenterScreen
@@ -317,4 +333,5 @@ Partial Class RegistrationForm
     Friend WithEvents btnNext As Button
     Friend WithEvents Label9 As Label
     Friend WithEvents txbConfirmPass As TextBox
+    Friend WithEvents Button1 As Button
 End Class

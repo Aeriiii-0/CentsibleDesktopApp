@@ -21,11 +21,29 @@
 
     End Sub
 
-    Private Sub btnPlanA_Click(sender As Object, e As EventArgs) Handles btnPlanA.Click
-        'Plan a computation + display
+    Private Sub btnPlanA_Click(sender As Object, e As EventArgs)
+
+        If (salary > 0) Then
+            GlobalData.AddSalary(AccountID, salary, "A")
+            MessageBox.Show("Monthly Salary Updated!", "Notification")
+            DashboardForm.Show()
+            Me.Hide()
+        Else
+            MessageBox.Show("Error: Please enter a valid salary amount", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End If
     End Sub
 
-    Private Sub btnPlanB_Click(sender As Object, e As EventArgs) Handles btnPlanB.Click
-        'plan b computation + display
+    Private Sub btnPlanB_Click(sender As Object, e As EventArgs)
+        If (salary > 0) Then
+            GlobalData.AddSalary(AccountID, salary, "B")
+            MessageBox.Show("Monthly Salary Updated!", "Notification")
+
+            DashboardForm.Show()
+            Me.Hide()
+        Else
+            MessageBox.Show("Error: Please enter a valid salary amount", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End If
     End Sub
+
+
 End Class

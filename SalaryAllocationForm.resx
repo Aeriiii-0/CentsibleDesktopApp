@@ -140,10 +140,10 @@
         AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="btnPlanA.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnPlanA.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAPsAAADFCAYAAACSAoR7AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vAAADrwBlbxySQAAEM1JREFUeF7t3VlsXPUVx3H60KLS9oFKpQ9U6gYPRQKpqEJVpSJoqYpaCQmVIlpR
+        wAAADsABataJCQAAEM1JREFUeF7t3VlsXPUVx3H60KLS9oFKpQ9U6gYPRQKpqEJVpSJoqYpaCQmVIlpR
         aAkJhS5QAWolIAsNWYBACEmAhDirncQeO4khiRPbceI4TmLHSWzH42W8xdt4vO+vpzqTmjj3eJnlLv/l
         9/ARIkIQPOebuXPnf///myYnJwkAzHeT8xcAwEyIHcASiB3AEogdwBKIHcAS2sU+NTUlfs0W9T09VFBf
         T1vPnaflhYX0/MGD9FhmFj249VO6d+MmunPde/SdtW/TN1a8GfeLT7fRgZqaGxSEw1Tc2EilkQida22l
@@ -218,10 +218,10 @@
         +tMiAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="btnPlanB.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnPlanB.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAOsAAADCCAYAAACoqTUrAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vAAADrwBlbxySQAAEplJREFUeF7t3UlwXNd1xnGlUpVK2XLs2Btbke1UYg124khWUhZVJp1kkYqVlVLJ
+        wAAADsABataJCQAAEplJREFUeF7t3UlwXNd1xnGlUpVK2XLs2Btbke1UYg124khWUhZVJp1kkYqVlVLJ
         LrEXHjXYiSVRtiiSEgcJIDiapOVIVEqkTE0kQQIEARIEBE4gCQoAB3RjHoihGxMxD8T2pk5TCMF7uoEe
         7n3v3Pe+xW8DVyUmcP7u7vdO33fXzZs3FQDId5f+AwCQCbEKMDs7y34GoEOsAI5ArAEwODamrnVfV1XR
         qDpcW6v2njundldWqILSUvVqSYl6peiIeuHAAdUYj6uOoSHVOzKi+sfG1I3JSTU5Pc3+74FMiNURrfG4

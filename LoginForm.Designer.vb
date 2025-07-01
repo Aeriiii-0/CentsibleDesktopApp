@@ -141,9 +141,9 @@ Partial Class LoginForm
         chkbShowPassword.Font = New Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         chkbShowPassword.Location = New Point(871, 331)
         chkbShowPassword.Name = "chkbShowPassword"
-        chkbShowPassword.Size = New Size(121, 21)
+        chkbShowPassword.Size = New Size(116, 21)
         chkbShowPassword.TabIndex = 13
-        chkbShowPassword.Text = "show password"
+        chkbShowPassword.Text = "hide password"
         chkbShowPassword.UseVisualStyleBackColor = False
         ' 
         ' Label7

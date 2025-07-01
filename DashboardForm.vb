@@ -1,5 +1,6 @@
 ﻿Imports System.Drawing
 Imports System.Windows.Forms
+Imports System.Data.DataTable
 
 Public Class DashboardForm
 
@@ -160,8 +161,15 @@ Public Class DashboardForm
         pnlVieRecord.Visible = False
     End Sub
 
+
     Private Sub btnViewRecords_Click(sender As Object, e As EventArgs) Handles btnViewRecords.Click
+
         HighlightActiveButton(btnViewRecords)
+
+        Dim dt As DataTable = GlobalData.ViewExpenseRecord(AccountID)
+        DataGridViewExpenses.DataSource = dt
+
+
         pnlWithdraw.Visible = False
         pnlDebts.Visible = False
         pnlDashboard.Visible = False
@@ -172,5 +180,37 @@ Public Class DashboardForm
         pnlDashh.Visible = False
         pnlDash.Visible = False
         pnlVieRecord.Visible = True
+        DataGridViewExpenses.Visible = True
+
+
     End Sub
+
+
+
+
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles btnBack.Click
+        DashboardPanels()
+    End Sub
+
+    Private Sub Button3_Click_1(sender As Object, e As EventArgs) Handles Button3.Click
+        DashboardPanels()
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        DashboardPanels()
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        DashboardPanels()
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        DashboardPanels()
+    End Sub
+
+
+
+
+
 End Class

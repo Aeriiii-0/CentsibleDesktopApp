@@ -24,7 +24,7 @@
         txbPassword.Clear()
         txbUsername.Clear()
         cmbGender.SelectedIndex = 0
-        dateTime.Value = DateAndTime.Now
+        dateTime.Value = Now
 
     End Sub
 
@@ -46,8 +46,9 @@
 
                 AccountID = Convert.ToInt32(GlobalData.GetAccountID(email))
                 SalaryAllocationForm.AccountID = AccountID
-                SalaryAllocationForm.Show()
+
                 Me.Hide()
+                SalaryAllocationForm.Show()
             Catch ex As Exception
 
                 MessageBox.Show("Error: Email Already in Use" & ex.Message, "Registration Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -58,5 +59,10 @@
         End If
 
 
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        HomePage.Show()
+        Me.Hide()
     End Sub
 End Class
