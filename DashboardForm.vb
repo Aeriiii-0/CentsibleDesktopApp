@@ -3,6 +3,7 @@ Imports System.Windows.Forms
 
 Public Class DashboardForm
 
+    Public AccountID As Integer
     Private Sub HighlightActiveButton(clickedBtn As Button)
         For Each ctrl As Control In Me.Controls
             If TypeOf ctrl Is Button Then

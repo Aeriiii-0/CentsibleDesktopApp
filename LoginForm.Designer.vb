@@ -83,6 +83,7 @@ Partial Class LoginForm
         ' txbUsername
         ' 
         txbUsername.BackColor = Color.FromArgb(CByte(216), CByte(238), CByte(235))
+        txbUsername.Font = New Font("Gadugi", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         txbUsername.Location = New Point(664, 221)
         txbUsername.Name = "txbUsername"
         txbUsername.Size = New Size(328, 27)
@@ -91,6 +92,7 @@ Partial Class LoginForm
         ' txbPassword
         ' 
         txbPassword.BackColor = Color.FromArgb(CByte(216), CByte(238), CByte(235))
+        txbPassword.Font = New Font("Gadugi", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         txbPassword.Location = New Point(664, 295)
         txbPassword.Name = "txbPassword"
         txbPassword.Size = New Size(328, 27)

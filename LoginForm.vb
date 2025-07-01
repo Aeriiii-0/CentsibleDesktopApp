@@ -27,6 +27,6 @@
     End Sub
 
     Private Sub chkbShowPassword_CheckedChanged(sender As Object, e As EventArgs) Handles chkbShowPassword.CheckedChanged
-        'hide password 
+        txbPassword.UseSystemPasswordChar = chkbShowPassword.Checked
     End Sub
 End Class

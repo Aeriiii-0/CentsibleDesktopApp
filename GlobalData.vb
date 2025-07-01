@@ -1,6 +1,6 @@
 ﻿Module GlobalData
     Public Connector As SqlServerConnector = Nothing
-    Dim Conn As New SqlClient.SqlConnection("Server=NITROV\SQLEXPRESS;Database=DBCentsible;Integrated Security=True;")
+    Dim Conn As New SqlClient.SqlConnection("Server=ARRA\SQLEXPRESS02;Database=DBCentsible;Integrated Security=True;")
 
     Public Function CheckLogin(ByVal username As String, ByVal Password As String) As Boolean
         Dim Count As Integer
